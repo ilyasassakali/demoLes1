@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.demoles1'
+    namespace 'com.example.demohogerlager'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.demoles1"
+        applicationId "com.example.demohogerlager"
         minSdk 22
         targetSdk 33
         versionCode 1
