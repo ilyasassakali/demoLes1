@@ -11,8 +11,6 @@ class GameActivity : AppCompatActivity() {
     private var currentNumber = 0
     private var score =  0
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,10 +24,10 @@ class GameActivity : AppCompatActivity() {
         currentNumber = generateRandomNumber()
         //ici on a un randomnumber
 
-        currentNumberTextView.text = currentNumber.toString()
+        currentNumberTextView.text = currentNumber.toString();
 
         higherButton.setOnClickListener {
-            val newNumber = -()
+            val newNumber = generateRandomNumber()
             if (newNumber > currentNumber) {
                 score++
             } else {
@@ -37,7 +35,7 @@ class GameActivity : AppCompatActivity() {
             }
             currentNumber = newNumber
             currentNumberTextView.text = currentNumber.toString()
-            scoreTextView.text = score.toString()
+            scoreTextView.text = "score: " +score.toString()
         }
 
         lowerButton.setOnClickListener {
@@ -49,7 +47,7 @@ class GameActivity : AppCompatActivity() {
             }
             currentNumber = newNumber
             currentNumberTextView.text = currentNumber.toString()
-            scoreTextView.text = score.toString()
+            scoreTextView.text = "score: " +score.toString()
         }
 
         equalButton.setOnClickListener {
@@ -61,7 +59,7 @@ class GameActivity : AppCompatActivity() {
             }
             currentNumber = newNumber
             currentNumberTextView.text = currentNumber.toString()
-            scoreTextView.text = score.toString()
+            scoreTextView.text = "score: " +score.toString()
 
         }
 

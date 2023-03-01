@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="172dp"
-        android:text="score"
+        android:text="score: 0"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,19 +32,30 @@
     <Button
         android:id="@+id/higherButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#28BCFF"
         android:text="hoger"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/equalButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/equalButton" />
+        app:layout_constraintStart_toEndOf="@+id/equalButton"
+
+
+        />
 
     <Button
         android:id="@+id/equalButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
         android:layout_marginEnd="10dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#28BCFF"
         android:text="gelijk"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/higherButton"
         app:layout_constraintStart_toEndOf="@+id/lowerButton"
@@ -52,10 +63,14 @@
 
     <Button
         android:id="@+id/lowerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
         android:layout_marginEnd="1dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#28BCFF"
         android:text="lager"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/equalButton"
         app:layout_constraintEnd_toStartOf="@+id/equalButton"
         app:layout_constraintStart_toStartOf="parent" />
